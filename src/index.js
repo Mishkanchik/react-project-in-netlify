@@ -18,7 +18,18 @@ import  ReactDOM  from 'react-dom/client';
 
 function App () {
     return(
+        <>
         <h1> hello App.js</h1>
+        <ul>Lorem, ipsum dolor.</ul>
+        </>
+        // <React.Fragment>
+        // <h1> hello App.js</h1>
+        // <ul>Lorem, ipsum dolor.</ul>
+        // </React.Fragment>
+        // <div>
+        // <h1> hello App.js</h1>
+        // <ul>Lorem, ipsum dolor.</ul>
+        // </div>
     )
 
 }
