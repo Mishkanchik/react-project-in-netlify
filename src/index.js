@@ -16,12 +16,40 @@ import  ReactDOM  from 'react-dom/client';
 //     </div>
 // )
 
+
+// function AppList(){
+
+//     return(
+//         <header>
+
+//         </header>
+//     )
+
+// }
+const Header = () => <h1>jdfshg</h1>
+
+function AppList () {
+    return(
+        <ul>
+            <li>list item 1 </li>
+            <li>list item 1 </li>
+            <li>list item 1 </li>
+            <li>list item 1 </li>
+            <li>list item 1 </li>
+        </ul>
+    )
+}
+
 function App () {
     return(
         <>
-        <h1> hello App.js</h1>
-        <ul>Lorem, ipsum dolor.</ul>
+        <Header></Header>
+        <AppList></AppList>
         </>
+        // <>
+        // <h1> hello App.js</h1>
+        // <ul>Lorem, ipsum dolor.</ul>
+        // </>
         // <React.Fragment>
         // <h1> hello App.js</h1>
         // <ul>Lorem, ipsum dolor.</ul>
