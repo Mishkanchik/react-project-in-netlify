@@ -1,5 +1,5 @@
-import React from 'react';
-import  ReactDOM  from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 // const el = (
 //     <div>
@@ -16,7 +16,6 @@ import  ReactDOM  from 'react-dom/client';
 //     </div>
 // )
 
-
 // function AppList(){
 
 //     return(
@@ -28,8 +27,8 @@ import  ReactDOM  from 'react-dom/client';
 // }
 const Header = () => <h1>jdfshg</h1>
 
-function AppList () {
-    return(
+function AppList() {
+    return (
         <ul>
             <li>list item 1 </li>
             <li>list item 1 </li>
@@ -40,11 +39,11 @@ function AppList () {
     )
 }
 
-function App () {
-    return(
+function App() {
+    return (
         <>
-        <Header></Header>
-        <AppList></AppList>
+            <Header></Header>
+            <AppList></AppList>
         </>
         // <>
         // <h1> hello App.js</h1>
@@ -59,10 +58,7 @@ function App () {
         // <ul>Lorem, ipsum dolor.</ul>
         // </div>
     )
-
 }
 
-
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App/>)
-
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />)
