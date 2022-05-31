@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './CartHeader.module.css'
+import './CartHeader.scss'
 export const CartHeader = () => {
     return (
-        <div className={styles.сartHeader}>
+        <div className="cartHeader">
             <div>0</div>
             <div>0$</div>
         </div>
