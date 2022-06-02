@@ -2,16 +2,21 @@ import React from 'react'
 
 import { Card, CardContent, CardActions, Button } from '@mui/material'
 import './ProductListItem.scss'
+
 export const ProductListItem = ({
     name,
     description,
     type,
     capasity,
     price,
+    images,
 }) => {
     return (
         <Card>
             <CardContent>
+                <div className="product-img">
+                    <img src={images} alt="" />
+                </div>
                 <h4>{name}</h4>
                 <p className="product-description">{description}</p>
                 <div className="product-features">
