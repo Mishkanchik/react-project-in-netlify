@@ -18,8 +18,8 @@ export const ProductList = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                {productsArray.map((product) => (
-                    <Grid item xs={12} sm={6} md={4}>
+                {productsArray.map((product, i) => (
+                    <Grid item xs={12} sm={6} md={4} key={i}>
                         <ProductListItem
                             name={product.name}
                             description={product.description}
