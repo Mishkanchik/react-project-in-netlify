@@ -1,5 +1,6 @@
 const products = [
     {
+        id: 1,
         name: 'iphone 13 pro',
         description: ' this is iphone 13 pro ',
         type: 'phone',
@@ -7,6 +8,7 @@ const products = [
         price: '800',
     },
     {
+        id: 2,
         name: 'iphone 9 ',
         description: ' this is iphone 9 ',
         type: 'phone',
@@ -14,6 +16,7 @@ const products = [
         price: '700',
     },
     {
+        id: 3,
         name: 'iphone 10 pro',
         description: ' this is iphone 10 pro ',
         type: 'phone',
@@ -21,6 +24,7 @@ const products = [
         price: '900',
     },
     {
+        id: 4,
         name: 'iphone 12 pro',
         description: ' this is iphone 12 pro ',
         type: 'phone',
@@ -28,6 +32,7 @@ const products = [
         price: '1500',
     },
     {
+        id: 5,
         name: 'iphone 13 ',
         description: ' this is iphone 13 ',
         type: 'phone',
@@ -35,6 +40,7 @@ const products = [
         price: '2200',
     },
     {
+        id: 6,
         name: 'iphone 11 pro',
         description: ' this is iphone 11 pro ',
         type: 'phone',
