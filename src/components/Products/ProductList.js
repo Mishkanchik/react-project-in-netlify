@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid, Typography } from '@mui/material'
-
 import { ProductListItem } from './ProductListItem'
 import productsArray from 'utils/productsArray'
+import logo from 'assets/logo.png'
 
 export const ProductList = () => {
     return (
@@ -10,7 +10,7 @@ export const ProductList = () => {
             <Typography variant="h3" align="center" style={{ marginTop: 30 }}>
                 ProductList
             </Typography>
-
+            <img src={logo} alt="" />
             <Grid
                 container
                 spacing={3}

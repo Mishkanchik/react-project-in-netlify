@@ -2,7 +2,7 @@ const products = [
     {
         id: 1,
         name: 'iphone 13 pro',
-        description: ' this is iphone 13 pro ',
+        description: ' This is iphone 13 pro ',
         type: 'phone',
         capasity: '128',
         price: '800',
@@ -10,7 +10,7 @@ const products = [
     {
         id: 2,
         name: 'iphone 9 ',
-        description: ' this is iphone 9 ',
+        description: ' This is iphone 9 ',
         type: 'phone',
         capasity: '128',
         price: '700',
@@ -18,7 +18,7 @@ const products = [
     {
         id: 3,
         name: 'iphone 10 pro',
-        description: ' this is iphone 10 pro ',
+        description: ' This is iphone 10 pro ',
         type: 'phone',
         capasity: '128',
         price: '900',
@@ -26,7 +26,7 @@ const products = [
     {
         id: 4,
         name: 'iphone 12 pro',
-        description: ' this is iphone 12 pro ',
+        description: ' This is iphone 12 pro ',
         type: 'phone',
         capasity: '64',
         price: '1500',
@@ -34,7 +34,7 @@ const products = [
     {
         id: 5,
         name: 'iphone 13 ',
-        description: ' this is iphone 13 ',
+        description: ' This is iphone 13 ',
         type: 'phone',
         capasity: '128',
         price: '2200',
@@ -42,7 +42,7 @@ const products = [
     {
         id: 6,
         name: 'iphone 11 pro',
-        description: ' this is iphone 11 pro ',
+        description: ' This is iphone 11 pro ',
         type: 'phone',
         capasity: '256',
         price: '2000',
