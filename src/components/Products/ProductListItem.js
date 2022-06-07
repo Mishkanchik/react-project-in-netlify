@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Card, CardContent, CardActions, Button } from '@mui/material'
 import './ProductListItem.scss'
+import PropTypes from 'prop-types'
 
 export const ProductListItem = ({
     name,
@@ -32,4 +33,13 @@ export const ProductListItem = ({
             </CardActions>
         </Card>
     )
+}
+
+ProductListItem.propTypes = {
+    name: PropTypes.string,
+    description: PropTypes.string,
+    type: PropTypes.string,
+    capasity: PropTypes.number,
+    price: PropTypes.number,
+    images: PropTypes.string,
 }
