@@ -6,11 +6,11 @@ import PropTypes from 'prop-types'
 
 export const ProductListItem = ({
     name,
-    description,
+    description = 'No desc ...',
     type,
     capasity,
     price,
-    images,
+    images = 'images/imagessf.jpg',
 }) => {
     return (
         <Card>
@@ -36,10 +36,14 @@ export const ProductListItem = ({
 }
 
 ProductListItem.propTypes = {
-    name: PropTypes.string,
+    name: PropTypes.string.isRequired,
     description: PropTypes.string,
-    type: PropTypes.string,
-    capasity: PropTypes.number,
-    price: PropTypes.number,
+    type: PropTypes.string.isRequired,
+    capasity: PropTypes.number.isRequired,
+    price: PropTypes.number.isRequired,
     images: PropTypes.string,
 }
+// ProductListItem.defaultProps = {
+//     description: 'No desc ...',
+//     images: 'images/imagessf.jpg',
+// }
