@@ -1,16 +1,16 @@
 import React from 'react'
-
+import { TextField } from '@mui/material'
 import { Card, CardContent, CardActions, Button } from '@mui/material'
 import './ProductListItem.scss'
 import PropTypes from 'prop-types'
 
 export const ProductListItem = ({
     name,
-    description = 'No desc ...',
+    description,
     type,
     capasity,
     price,
-    images = 'images/imagessf.jpg',
+    images,
 }) => {
     return (
         <Card>
@@ -27,9 +27,14 @@ export const ProductListItem = ({
                     <span>Capacity:</span> {capasity}gb
                 </div>
                 <div className="product-price">{price}$</div>
+                <div className="product-quantity">
+                    <Button variant="outlined">-</Button>
+                    <TextField size="small" value="1" />
+                    <Button variant="outlined">+</Button>
+                </div>
             </CardContent>
             <CardActions className="add-to-cart-block">
-                <Button variant="contained">Add to cart</Button>
+                <Button variant="outlined">Add to cart</Button>
             </CardActions>
         </Card>
     )
@@ -43,7 +48,7 @@ ProductListItem.propTypes = {
     price: PropTypes.number.isRequired,
     images: PropTypes.string,
 }
-// ProductListItem.defaultProps = {
-//     description: 'No desc ...',
-//     images: 'images/imagessf.jpg',
-// }
+ProductListItem.defaultProps = {
+    description: 'No desc ...',
+    images: 'images/imagessf.jpg',
+}

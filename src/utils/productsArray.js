@@ -51,7 +51,7 @@ const products = [
         type: 'phone',
         capasity: 256,
         price: 2000,
-        // images: 'images/iphone1.jpg',
+        images: 'images/iphone1.jpg',
     },
 ]
 
