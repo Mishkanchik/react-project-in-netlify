@@ -8,14 +8,23 @@ import { useState } from 'react'
 
 export const App = () => {
     const [cartData, setCartData] = useState({
-        count: 10,
-        price: 100,
+        count: 0,
+        price: 0,
     })
+
+    const addProductToCart = (count, price) => {
+        setCartData((prevState) => ({
+            count: prevState.count + count,
+            price: prevState.price + count * price,
+        }))
+    }
+
     return (
         <>
             <CssBaseline />
             <Header cartData={cartData} />
-            <Main />
+
+            <Main addProductToCart={addProductToCart} />
             <Footer />
         </>
     )
