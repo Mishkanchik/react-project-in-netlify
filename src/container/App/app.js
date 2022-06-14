@@ -7,22 +7,16 @@ import { CssBaseline } from '@mui/material'
 import { useState } from 'react'
 
 export const App = () => {
-    const [cartData, setCartData] = useState({
-        count: 0,
-        price: 0,
+    const [procuctsInCart, setprocuctsInCart] = useState({
+        1: 5,
+        2: 5,
     })
-
-    const addProductToCart = (count, price) => {
-        setCartData((prevState) => ({
-            count: prevState.count + count,
-            price: prevState.price + count * price,
-        }))
-    }
+    const addProductToCart = () => {}
 
     return (
         <>
             <CssBaseline />
-            <Header cartData={cartData} />
+            <Header procuctsInCart={procuctsInCart} />
 
             <Main addProductToCart={addProductToCart} />
             <Footer />

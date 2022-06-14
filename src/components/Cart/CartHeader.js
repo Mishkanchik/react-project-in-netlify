@@ -1,10 +1,13 @@
 import React from 'react'
 import './CartHeader.scss'
-export const CartHeader = ({ cartData }) => {
+export const CartHeader = ({ procuctsInCart }) => {
     return (
         <div className="cartHeader">
-            <div>{cartData.count}</div>
-            <div>{cartData.price}$</div>
+            {Object.keys(procuctsInCart).map((productId) => (
+                <div>
+                    {productId} : {procuctsInCart[productId]}
+                </div>
+            ))}
         </div>
     )
 }
