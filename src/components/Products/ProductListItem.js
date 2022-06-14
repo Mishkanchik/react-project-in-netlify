@@ -16,8 +16,6 @@ export const ProductListItem = ({
 
     const onIncrementClick = () => setCount(count + 1)
     const onDecrementClick = () => setCount(count - 1)
-    const [color, setColor] = useState('green')
-    const onClockColor = () => setColor(color === 'red' ? 'green' : 'red')
 
     return (
         <Card>
@@ -27,10 +25,7 @@ export const ProductListItem = ({
                 </div>
                 <h4>{name}</h4>
                 <p className="product-description">{description}</p>
-                <p>Color:{color}</p>
-                <Button variant="contained" onClick={onClockColor}>
-                    Chenge color
-                </Button>
+
                 <div className="product-features">
                     <span>Type:</span> {type}
                 </div>
