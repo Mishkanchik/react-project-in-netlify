@@ -7,11 +7,17 @@ import { CssBaseline } from '@mui/material'
 import { useState } from 'react'
 
 export const App = () => {
-    const [procuctsInCart, setprocuctsInCart] = useState({
+    const [procuctsInCart, setProcuctsInCart] = useState({
         1: 5,
         2: 5,
     })
-    const addProductToCart = () => {}
+    const addProductToCart = (productId, count) => {
+        setProcuctsInCart((prevState) =>
+            Object.assign({}, prevState, {
+                [productId]: (prevState[productId] || 0) + count,
+            })
+        )
+    }
 
     return (
         <>
